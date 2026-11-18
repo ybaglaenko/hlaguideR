@@ -1,0 +1,20 @@
+Package: hlaguideR
+Type: Package
+Title: Design Base-Editing and Cas12a Guides Against HLA Alleles
+Version: 0.1.0
+Authors@R: person("Yuriy", "Baglaenko", email = "yuriy.baglaenko@cchmc.org",
+                  role = c("aut", "cre"))
+Description: Enumerates CRISPR protospacers that disrupt splice sites or
+    introduce premature termination codons in human leukocyte antigen genes,
+    annotates the position of each editable base within every protospacer, and
+    summarises off-target searches across a panel of alleles. Guide
+    enumeration, splice-site annotation and off-target accounting run in base
+    R. The alignment search itself is delegated to an external tool such as
+    'Cas-OFFinder' (Bae, Park and Kim, 2014) <doi:10.1093/bioinformatics/btu048>,
+    for which input writers and output parsers are provided.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Suggests: jsonlite, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
